@@ -1,14 +1,118 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="da">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>boilerplate</title>
-    <link rel="stylesheet" href="assets/css/site.css">
-    <script src="assets/js/site.js"></script>
-    <link rel="shortcut icon" href="assets/img/favicon.icon" type="image/x-icon">
+    <meta name="theme-color" content="#201E1E">
+    <title>ElPrisen.nu</title>
+    <link rel="manifest" href="manifest.json">
+    <link rel="icon" href="assets/icons/logo-192.png">
+<link rel="apple-touch-icon" href="assets/icons/logo-192.png">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="assets/css/reset.css">
+    <link rel="stylesheet" href="assets/css/style.css">
 </head>
 <body>
-    
+    <header>
+        <div id="logo">
+            <img src="assets/img/logo.svg" alt="ElPrisen.nu logo">
+            <span>ElPrisen.nu</span>
+        </div>
+        <nav>
+            <button class="navKnap" data-side="oversigt">Oversigt</button>
+            <button class="navKnap" data-side="ligenu">Lige nu</button>
+            <button class="navKnap" data-side="historik">Historik</button>
+        </nav>
+        <button id="indstillingerKnap"><img src="assets/img/gear.svg" alt="Indstillinger"></button>
+    </header>
+
+    <p id="fejl"></p>
+
+    <main>
+        <section id="ligenu" class="side">
+            <h2>Elprisen lige nu</h2>
+            <div class="cirkel stor">
+                <div class="indre">
+                    <p id="nuPris" class="stortal"></p>
+                    <p>pr. kwh</p>
+                </div>
+            </div>
+            <p id="nuTid"></p>
+            <div class="minmax">
+                <div>
+                    <div class="cirkel lille">
+                        <div class="indre">
+                            <p class="lavestePris"></p>
+                            <p>pr. kwh</p>
+                        </div>
+                    </div>
+                    <p>Laveste pris</p>
+                </div>
+                <div>
+                    <div class="cirkel lille">
+                        <div class="indre">
+                            <p class="hojestePris"></p>
+                            <p>pr. kwh</p>
+                        </div>
+                    </div>
+                    <p>Højeste pris</p>
+                </div>
+            </div>
+        </section>
+
+        <section id="oversigt" class="side">
+            <h2>Oversigt</h2>
+            <div class="minmax">
+                <div>
+                    <div class="cirkel lille">
+                        <div class="indre">
+                            <p class="lavestePris"></p>
+                            <p>pr. kwh</p>
+                        </div>
+                    </div>
+                    <p>Laveste pris</p>
+                </div>
+                <div>
+                    <div class="cirkel lille">
+                        <div class="indre">
+                            <p class="hojestePris"></p>
+                            <p>pr. kwh</p>
+                        </div>
+                    </div>
+                    <p>Højeste pris</p>
+                </div>
+            </div>
+            <ul id="oversigtListe"></ul>
+        </section>
+
+        <section id="historik" class="side">
+            <h2>Historik</h2>
+            <input type="date" id="datoValg">
+            <p id="historikTekst"></p>
+            <ul id="historikListe"></ul>
+        </section>
+
+        <section id="indstillinger" class="side">
+            <button id="lukKnap"><img src="assets/img/xmark.svg" alt="Luk"></button>
+            <h2>Indstillinger</h2>
+            <div class="indstilling">
+                <label for="momsValg">Priser inkl. moms</label>
+                <input type="checkbox" id="momsValg" class="kontakt">
+            </div>
+            <div class="indstilling">
+                <label for="regionValg">Vælg region</label>
+                <select id="regionValg">
+                    <option value="DK2">Region Øst</option>
+                    <option value="DK1">Region Vest</option>
+                </select>
+            </div>
+        </section>
+    </main>
+
+    <footer id="info"></footer>
+
+    <script src="assets/js/model.js"></script>
+    <script src="assets/js/view.js"></script>
+    <script src="assets/js/controller.js"></script>
 </body>
 </html>

@@ -1,0 +1,295 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: "Roboto", sans-serif;
+    background: #201E1E;
+    color: #EBEBEB;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+}
+
+#logo {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+#logo img {
+    height: 30px;
+}
+
+#logo span {
+    display: none;
+    color: #55EC20;
+    font-size: 14px;
+}
+
+nav {
+    display: flex;
+    gap: 20px;
+}
+
+nav button {
+    background: none;
+    border: none;
+    color: #EBEBEB;
+    font-family: inherit;
+    font-size: 12px;
+    font-weight: 700;
+    text-transform: uppercase;
+    cursor: pointer;
+}
+
+nav button.valgt {
+    color: #55EC20;
+}
+
+#indstillingerKnap {
+    background: none;
+    border: none;
+    cursor: pointer;
+}
+
+#indstillingerKnap img {
+    width: 20px;
+}
+
+#fejl {
+    text-align: center;
+    color: #FF4D00;
+    font-size: 12px;
+}
+
+main {
+    background: #27282B;
+}
+
+.side {
+    display: none;
+    padding: 20px;
+    text-align: center;
+}
+
+.side.aktiv {
+    display: block;
+}
+
+h2 {
+    font-size: 24px;
+    font-weight: 400;
+    text-transform: uppercase;
+    margin: 30px 0;
+}
+
+.cirkel {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0 auto;
+    border: 3px solid #333333;
+    border-radius: 50%;
+}
+
+.cirkel.stor {
+    width: 240px;
+    height: 240px;
+}
+
+.cirkel.lille {
+    width: 90px;
+    height: 90px;
+    font-size: 10px;
+}
+
+.indre {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 6px;
+    width: 85%;
+    height: 85%;
+    border: 1px dashed #55EC20;
+    border-radius: 50%;
+}
+
+.stortal {
+    color: #55EC20;
+    font-size: 32px;
+    font-weight: 700;
+}
+
+#nuTid {
+    color: #55EC20;
+    margin-top: 20px;
+}
+
+.minmax {
+    display: flex;
+    justify-content: center;
+    gap: 40px;
+    margin: 20px 0;
+    font-size: 12px;
+    line-height: 2;
+}
+
+#ligenu .minmax {
+    display: none;
+}
+
+ul {
+    margin-top: 10px;
+}
+
+li {
+    display: flex;
+    justify-content: space-between;
+    padding: 10px 20px;
+    margin-bottom: 8px;
+    background: #201E1E;
+    border-radius: 6px;
+    font-size: 14px;
+}
+
+li span:last-child {
+    color: #55EC20;
+}
+
+#datoValg {
+    width: 100%;
+    padding: 12px;
+    background: #201E1E;
+    color: #EBEBEB;
+    border: none;
+    border-radius: 6px;
+    font-family: inherit;
+    font-size: 14px;
+    color-scheme: dark;
+}
+
+#historikTekst {
+    margin: 20px 0;
+    font-size: 12px;
+    text-transform: uppercase;
+}
+
+.indstilling {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 30px 0;
+    font-size: 12px;
+    text-transform: uppercase;
+}
+
+select {
+    padding: 8px;
+    background: #201E1E;
+    color: #EBEBEB;
+    border: none;
+    border-radius: 6px;
+    font-family: inherit;
+}
+
+.kontakt {
+    -webkit-appearance: none;
+    appearance: none;
+    position: relative;
+    width: 50px;
+    height: 26px;
+    background: #201E1E;
+    border-radius: 13px;
+    cursor: pointer;
+}
+
+.kontakt::before {
+    content: "";
+    position: absolute;
+    top: 3px;
+    left: 3px;
+    width: 20px;
+    height: 20px;
+    background: #EBEBEB;
+    border-radius: 50%;
+}
+
+.kontakt:checked::before {
+    left: 27px;
+    background: #55EC20;
+}
+
+#lukKnap {
+    display: none;
+    position: absolute;
+    top: 15px;
+    right: 15px;
+    background: none;
+    border: none;
+    cursor: pointer;
+}
+
+#lukKnap img {
+    width: 24px;
+}
+
+footer {
+    padding: 15px;
+    text-align: center;
+    font-size: 12px;
+    line-height: 1.5;
+}
+
+footer span {
+    color: #55EC20;
+}
+
+@media (min-width: 900px) {
+    nav {
+        display: none;
+    }
+
+    #logo span {
+        display: inline;
+    }
+
+    main {
+        display: flex;
+    }
+
+    #ligenu, #oversigt, #historik {
+        display: block;
+        flex: 1;
+    }
+
+    #ligenu .minmax {
+        display: flex;
+    }
+
+    #oversigt .minmax {
+        display: none;
+    }
+
+    #indstillinger.aktiv {
+        display: block;
+        position: fixed;
+        top: 80px;
+        left: 50%;
+        margin-left: -300px;
+        width: 600px;
+        padding: 40px 60px;
+        background: #27282B;
+        border-radius: 6px;
+        box-shadow: 0 0 0 2000px rgba(0, 0, 0, 0.7);
+    }
+
+    #lukKnap {
+        display: block;
+    }
+}

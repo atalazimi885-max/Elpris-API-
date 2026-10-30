@@ -1,0 +1,31 @@
+<svg width="47" height="47" viewBox="0 0 47 47" fill="none" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+<g filter="url(#filter0_di_2_982)">
+<circle cx="23.5" cy="23.5" r="17.5" fill="#201E1E"/>
+<circle cx="23.5" cy="23.5" r="15.5" stroke="#55EC20" stroke-opacity="0.5" stroke-width="4" stroke-dasharray="2 2"/>
+</g>
+<use xlink:href="#stroke0_2_982" fill="#201E1E"/>
+<mask id="stroke1_2_982" fill="white">
+<use xlink:href="#stroke0_2_982"/>
+</mask>
+<path fill="#55EC20" d="M28.1187 20.1155H24.1298L25.6023 15.6288C25.7405 15.1034 25.343 14.5849 24.8004 14.5849H19.8229C19.4081 14.5849 19.0555 14.8925 19.0002 15.3039L17.8941 23.5997C17.8284 24.0975 18.2155 24.5399 18.7167 24.5399H22.8197L21.2262 31.263C21.1018 31.7884 21.5028 32.2827 22.0316 32.2827C22.322 32.2827 22.5985 32.1306 22.7506 31.8679L28.8342 21.3598C29.1557 20.8102 28.7582 20.1155 28.1187 20.1155Z" stroke-width="2" stroke="#55EC20" mask="url(#stroke1_2_982)"/>
+<defs>
+<filter id="filter0_di_2_982" x="0" y="0" width="47" height="47" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
+<feFlood flood-opacity="0" result="BackgroundImageFix"/>
+<feColorMatrix in="SourceAlpha" type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0" result="hardAlpha"/>
+<feOffset/>
+<feGaussianBlur stdDeviation="3"/>
+<feComposite in2="hardAlpha" operator="out"/>
+<feColorMatrix type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0.25 0"/>
+<feBlend mode="normal" in2="BackgroundImageFix" result="effect1_dropShadow_2_982"/>
+<feBlend mode="normal" in="SourceGraphic" in2="effect1_dropShadow_2_982" result="shape"/>
+<feColorMatrix in="SourceAlpha" type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0" result="hardAlpha"/>
+<feMorphology radius="2" operator="erode" in="SourceAlpha" result="effect2_innerShadow_2_982"/>
+<feOffset/>
+<feGaussianBlur stdDeviation="4"/>
+<feComposite in2="hardAlpha" operator="arithmetic" k2="-1" k3="1"/>
+<feColorMatrix type="matrix" values="0 0 0 0 0.358333 0 0 0 0 0.358333 0 0 0 0 0.358333 0 0 0 0.25 0"/>
+<feBlend mode="normal" in2="shape" result="effect2_innerShadow_2_982"/>
+</filter>
+<path id="stroke0_2_982" d="M28.1187 20.1155H24.1298L25.6023 15.6288C25.7405 15.1034 25.343 14.5849 24.8004 14.5849H19.8229C19.4081 14.5849 19.0555 14.8925 19.0002 15.3039L17.8941 23.5997C17.8284 24.0975 18.2155 24.5399 18.7167 24.5399H22.8197L21.2262 31.263C21.1018 31.7884 21.5028 32.2827 22.0316 32.2827C22.322 32.2827 22.5985 32.1306 22.7506 31.8679L28.8342 21.3598C29.1557 20.8102 28.7582 20.1155 28.1187 20.1155Z"/>
+</defs>
+</svg>
